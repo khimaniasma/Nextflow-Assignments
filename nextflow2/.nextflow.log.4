@@ -1,0 +1,101 @@
+Apr-23 09:45:58.478 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nextflow2.sh
+Apr-23 09:45:58.672 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Apr-23 09:45:58.723 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/asmakhimani/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Apr-23 09:45:58.742 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-23 09:45:58.744 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-23 09:45:58.753 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-23 09:45:58.768 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-23 09:45:58.902 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-23 09:45:58.947 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow2.sh` [special_spence] DSL2 - revision: ed63bc7a6c
+Apr-23 09:45:58.949 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-23 09:45:58.950 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-23 09:45:58.990 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/asmakhimani/.nextflow/secrets/store.json
+Apr-23 09:45:59.006 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@f9b5552] - activable => nextflow.secret.LocalSecretsProvider@f9b5552
+Apr-23 09:45:59.132 [main] DEBUG nextflow.Session - Session UUID: f3930bf2-832f-46d3-a82e-d90401c8dc0d
+Apr-23 09:45:59.132 [main] DEBUG nextflow.Session - Run name: special_spence
+Apr-23 09:45:59.136 [main] DEBUG nextflow.Session - Executor pool size: 4
+Apr-23 09:45:59.151 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-23 09:45:59.283 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (17:01 EDT)
+  System: Mac OS X 12.2.1
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 3245@Asmas-MacBook-Air.local [127.0.0.1]
+  CPUs: 4 - Mem: 8 GB (232.9 MB) - Swap: 1 GB (828.8 MB) - Virtual threads ON
+Apr-23 09:45:59.312 [main] DEBUG nextflow.Session - Work-dir: /Users/asmakhimani/nextflow2/work [Mac OS X]
+Apr-23 09:45:59.312 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/asmakhimani/nextflow2/bin
+Apr-23 09:45:59.328 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-23 09:45:59.354 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-23 09:45:59.398 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-23 09:45:59.416 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Apr-23 09:45:59.548 [main] DEBUG nextflow.Session - Session start
+Apr-23 09:46:00.753 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-23 09:46:01.048 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 09:46:01.049 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 09:46:01.062 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-23 09:46:01.078 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=8 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Apr-23 09:46:01.083 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-23 09:46:01.297 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 09:46:01.297 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 09:46:01.304 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 09:46:01.305 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 09:46:01.311 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: mlst_g, skesa_ga, quast_q
+Apr-23 09:46:01.312 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Apr-23 09:46:01.328 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > skesa_ga
+Apr-23 09:46:01.333 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quast_q
+Apr-23 09:46:01.337 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mlst_g
+Apr-23 09:46:01.345 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_4914b05dff7e1517: /Users/asmakhimani/nextflow2/nextflow2.sh
+Apr-23 09:46:01.356 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-23 09:46:01.356 [main] DEBUG nextflow.Session - Session await
+Apr-23 09:46:01.734 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 09:46:01.738 [Task submitter] INFO  nextflow.Session - [71/355113] Submitted process > skesa_ga (1)
+Apr-23 09:46:05.198 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: skesa_ga (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/asmakhimani/nextflow2/work/71/35511306d898e1d769ba722fa30905]
+Apr-23 09:46:05.258 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 09:46:05.259 [Task submitter] INFO  nextflow.Session - [39/2944b0] Submitted process > mlst_g (1)
+Apr-23 09:46:05.271 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 09:46:05.272 [Task submitter] INFO  nextflow.Session - [7a/1c8bfd] Submitted process > quast_q (1)
+Apr-23 09:46:05.899 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: mlst_g (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/asmakhimani/nextflow2/work/39/2944b0ca0ce0316d922e4a89e5b159]
+Apr-23 09:46:05.901 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `mlst_g (1)` is unable to find [UnixPath]: `/Users/asmakhimani/nextflow2/work/39/2944b0ca0ce0316d922e4a89e5b159/mlst_results` (pattern: `mlst_results`)
+Apr-23 09:46:05.911 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=mlst_g (1); work-dir=/Users/asmakhimani/nextflow2/work/39/2944b0ca0ce0316d922e4a89e5b159
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `mlst_results` expected by process `mlst_g (1)`
+Apr-23 09:46:05.988 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'mlst_g (1)'
+
+Caused by:
+  Missing output file(s) `mlst_results` expected by process `mlst_g (1)`
+
+Command executed:
+
+  mlst assembly.fasta > mlst_results.tsv
+
+Command exit status:
+  0
+
+Command output:
+  (empty)
+
+Command error:
+  [09:46:05] This is mlst 2.23.0 running on darwin with Perl 5.026002
+  [09:46:05] Checking mlst dependencies:
+  [09:46:05] Found 'blastn' => /Users/asmakhimani/mambaforge/envs/nf2/bin/blastn
+  [09:46:05] Found 'any2fasta' => /Users/asmakhimani/mambaforge/envs/nf2/bin/any2fasta
+  [09:46:05] Found blastn: 2.15.0+ (002015)
+  [09:46:05] Excluding 3 schemes: ecoli vcholerae_2 abaumannii
+  ERROR: The input appears to be empty
+  [09:46:05] mlst also supports --json output for the modern bioinformatician.
+  [09:46:05] Done.
+
+Work dir:
+  /Users/asmakhimani/nextflow2/work/39/2944b0ca0ce0316d922e4a89e5b159
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Apr-23 09:46:06.003 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `mlst_results` expected by process `mlst_g (1)`
+Apr-23 09:46:06.094 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-23 09:46:06.103 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-23 09:46:06.103 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-23 09:46:06.119 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Apr-23 09:46:06.158 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=1; retriesCount=0; abortedCount=0; succeedDuration=3.4s; failedDuration=605ms; cachedDuration=0ms;loadCpus=1; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Apr-23 09:46:06.226 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-23 09:46:06.264 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,9 @@
+[10:15:21] This is mlst 2.23.0 running on darwin with Perl 5.026002
+[10:15:21] Checking mlst dependencies:
+[10:15:21] Found 'blastn' => /Users/asmakhimani/mambaforge/envs/nf2/bin/blastn
+[10:15:21] Found 'any2fasta' => /Users/asmakhimani/mambaforge/envs/nf2/bin/any2fasta
+[10:15:21] Found blastn: 2.15.0+ (002015)
+[10:15:21] Excluding 3 schemes: abaumannii ecoli vcholerae_2
+ERROR: The input appears to be empty
+[10:15:21] Use --quiet or -q to avoid all the message output, including these witticisms.
+[10:15:21] Done.

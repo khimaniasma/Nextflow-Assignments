@@ -1,0 +1,25 @@
+/Users/asmakhimani/mambaforge/envs/nf2/bin/quast assembly.fasta -o quast_report
+
+Version: 5.0.0, ae5cc4d54
+
+System information:
+  OS: Darwin-21.3.0-x86_64-i386-64bit (macosx)
+  Python version: 2.7.15
+  CPUs number: 4
+
+Started: 2024-04-23 10:15:21
+
+Logging to /Users/asmakhimani/nextflow2/work/5f/3b18bed016b162c762f08b27fe0018/quast_report/quast.log
+NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+
+CWD: /Users/asmakhimani/nextflow2/work/5f/3b18bed016b162c762f08b27fe0018
+Main parameters: 
+  MODE: default, threads: 1, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+WARNING: Skipping assembly because it doesn't contain contigs >= 500 bp.
+
+
+ERROR! None of the assembly files contains correct contigs. Please, provide different files or decrease --min-contig threshold.

@@ -1,0 +1,140 @@
+Apr-23 09:48:15.779 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nextflow2.sh
+Apr-23 09:48:15.964 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Apr-23 09:48:16.046 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/asmakhimani/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Apr-23 09:48:16.100 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-23 09:48:16.108 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-23 09:48:16.138 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-23 09:48:16.156 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-23 09:48:16.284 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-23 09:48:16.329 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow2.sh` [irreverent_noyce] DSL2 - revision: f1c27d651c
+Apr-23 09:48:16.331 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-23 09:48:16.332 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-23 09:48:16.349 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/asmakhimani/.nextflow/secrets/store.json
+Apr-23 09:48:16.363 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@f9b5552] - activable => nextflow.secret.LocalSecretsProvider@f9b5552
+Apr-23 09:48:16.494 [main] DEBUG nextflow.Session - Session UUID: cabcb9fc-449e-4c08-b175-50131af822a9
+Apr-23 09:48:16.495 [main] DEBUG nextflow.Session - Run name: irreverent_noyce
+Apr-23 09:48:16.498 [main] DEBUG nextflow.Session - Executor pool size: 4
+Apr-23 09:48:16.511 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-23 09:48:16.743 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (17:01 EDT)
+  System: Mac OS X 12.2.1
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 3365@Asmas-MacBook-Air.local [127.0.0.1]
+  CPUs: 4 - Mem: 8 GB (35.1 MB) - Swap: 1 GB (828.8 MB) - Virtual threads ON
+Apr-23 09:48:16.769 [main] DEBUG nextflow.Session - Work-dir: /Users/asmakhimani/nextflow2/work [Mac OS X]
+Apr-23 09:48:16.769 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/asmakhimani/nextflow2/bin
+Apr-23 09:48:16.784 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-23 09:48:16.814 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-23 09:48:16.852 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-23 09:48:16.868 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Apr-23 09:48:16.994 [main] DEBUG nextflow.Session - Session start
+Apr-23 09:48:18.081 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-23 09:48:18.292 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 09:48:18.292 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 09:48:18.303 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-23 09:48:18.317 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=8 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Apr-23 09:48:18.322 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-23 09:48:18.503 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 09:48:18.504 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 09:48:18.509 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 09:48:18.509 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 09:48:18.514 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: mlst_g, skesa_ga, quast_q
+Apr-23 09:48:18.514 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Apr-23 09:48:18.528 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > skesa_ga
+Apr-23 09:48:18.530 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quast_q
+Apr-23 09:48:18.531 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mlst_g
+Apr-23 09:48:18.532 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_1a132600e168ca68: /Users/asmakhimani/nextflow2/nextflow2.sh
+Apr-23 09:48:18.532 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-23 09:48:18.532 [main] DEBUG nextflow.Session - Session await
+Apr-23 09:48:18.927 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 09:48:18.930 [Task submitter] INFO  nextflow.Session - [74/6fe0f7] Submitted process > skesa_ga (1)
+Apr-23 09:48:22.240 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: skesa_ga (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/asmakhimani/nextflow2/work/74/6fe0f748fd1cdcd84233485d62efd6]
+Apr-23 09:48:22.297 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 09:48:22.297 [Task submitter] INFO  nextflow.Session - [ae/1efb6a] Submitted process > mlst_g (1)
+Apr-23 09:48:22.307 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 09:48:22.308 [Task submitter] INFO  nextflow.Session - [84/c2698c] Submitted process > quast_q (1)
+Apr-23 09:48:22.932 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: mlst_g (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/asmakhimani/nextflow2/work/ae/1efb6aaf4792e132821393b6e61538]
+Apr-23 09:48:35.871 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: quast_q (1); status: COMPLETED; exit: 4; error: -; workDir: /Users/asmakhimani/nextflow2/work/84/c2698c48c88cc987bec72e417e771c]
+Apr-23 09:48:35.879 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=quast_q (1); work-dir=/Users/asmakhimani/nextflow2/work/84/c2698c48c88cc987bec72e417e771c
+  error [nextflow.exception.ProcessFailedException]: Process `quast_q (1)` terminated with an error exit status (4)
+Apr-23 09:48:35.915 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'quast_q (1)'
+
+Caused by:
+  Process `quast_q (1)` terminated with an error exit status (4)
+
+Command executed:
+
+  quast assembly.fasta -o quast_report
+
+Command exit status:
+  4
+
+Command output:
+  /Users/asmakhimani/mambaforge/envs/nf2/bin/quast assembly.fasta -o quast_report
+  
+  Version: 5.0.0, ae5cc4d54
+  
+  System information:
+    OS: Darwin-21.3.0-x86_64-i386-64bit (macosx)
+    Python version: 2.7.15
+    CPUs number: 4
+  
+  Started: 2024-04-23 09:48:24
+  
+  Logging to quast_report/quast.log
+  NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+  
+  CWD: /Users/asmakhimani/nextflow2/work/84/c2698c48c88cc987bec72e417e771c
+  Main parameters: 
+    MODE: default, threads: 1, minimum contig length: 500, minimum alignment length: 65, \
+    ambiguity: one, threshold for extensive misassembly size: 1000
+  
+  Contigs:
+    Pre-processing...
+  WARNING: Skipping assembly because it doesn't contain contigs >= 500 bp.
+  
+  
+  ERROR! None of the assembly files contains correct contigs. Please, provide different files or decrease --min-contig threshold.
+
+Command error:
+  /Users/asmakhimani/mambaforge/envs/nf2/bin/quast assembly.fasta -o quast_report
+  
+  Version: 5.0.0, ae5cc4d54
+  
+  System information:
+    OS: Darwin-21.3.0-x86_64-i386-64bit (macosx)
+    Python version: 2.7.15
+    CPUs number: 4
+  
+  Started: 2024-04-23 09:48:24
+  
+  Logging to quast_report/quast.log
+  NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+  
+  CWD: /Users/asmakhimani/nextflow2/work/84/c2698c48c88cc987bec72e417e771c
+  Main parameters: 
+    MODE: default, threads: 1, minimum contig length: 500, minimum alignment length: 65, \
+    ambiguity: one, threshold for extensive misassembly size: 1000
+  
+  Contigs:
+    Pre-processing...
+  WARNING: Skipping assembly because it doesn't contain contigs >= 500 bp.
+  
+  
+  ERROR! None of the assembly files contains correct contigs. Please, provide different files or decrease --min-contig threshold.
+
+Work dir:
+  /Users/asmakhimani/nextflow2/work/84/c2698c48c88cc987bec72e417e771c
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Apr-23 09:48:35.924 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-23 09:48:35.930 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `quast_q (1)` terminated with an error exit status (4)
+Apr-23 09:48:35.979 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-23 09:48:35.982 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-23 09:48:36.005 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3.9s; failedDuration=13.5s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Apr-23 09:48:36.207 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-23 09:48:36.236 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

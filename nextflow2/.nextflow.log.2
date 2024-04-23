@@ -1,0 +1,92 @@
+Apr-23 10:11:51.509 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nextflow2.sh
+Apr-23 10:11:51.754 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Apr-23 10:11:51.834 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/asmakhimani/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Apr-23 10:11:51.863 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-23 10:11:51.866 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-23 10:11:51.871 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-23 10:11:51.892 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-23 10:11:52.046 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-23 10:11:52.113 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow2.sh` [intergalactic_spence] DSL2 - revision: 6f9357ea12
+Apr-23 10:11:52.115 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-23 10:11:52.116 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-23 10:11:52.156 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/asmakhimani/.nextflow/secrets/store.json
+Apr-23 10:11:52.170 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@f9b5552] - activable => nextflow.secret.LocalSecretsProvider@f9b5552
+Apr-23 10:11:52.404 [main] DEBUG nextflow.Session - Session UUID: c1c9559d-cd06-459a-b9ef-6f33bf398042
+Apr-23 10:11:52.405 [main] DEBUG nextflow.Session - Run name: intergalactic_spence
+Apr-23 10:11:52.409 [main] DEBUG nextflow.Session - Executor pool size: 4
+Apr-23 10:11:52.433 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-23 10:11:52.685 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (17:01 EDT)
+  System: Mac OS X 12.2.1
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 3771@Asmas-MacBook-Air.local [127.0.0.1]
+  CPUs: 4 - Mem: 8 GB (53 MB) - Swap: 1 GB (860.8 MB) - Virtual threads ON
+Apr-23 10:11:52.728 [main] DEBUG nextflow.Session - Work-dir: /Users/asmakhimani/nextflow2/work [Mac OS X]
+Apr-23 10:11:52.728 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/asmakhimani/nextflow2/bin
+Apr-23 10:11:52.779 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-23 10:11:52.825 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-23 10:11:52.867 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-23 10:11:52.896 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Apr-23 10:11:53.142 [main] DEBUG nextflow.Session - Session start
+Apr-23 10:11:54.465 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-23 10:11:54.749 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 10:11:54.750 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 10:11:54.770 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-23 10:11:54.793 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=8 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Apr-23 10:11:54.798 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-23 10:11:55.022 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 10:11:55.023 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 10:11:55.028 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 10:11:55.029 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 10:11:55.033 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: mlst_g, skesa_ga, quast_q
+Apr-23 10:11:55.034 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Apr-23 10:11:55.051 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > skesa_ga
+Apr-23 10:11:55.053 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quast_q
+Apr-23 10:11:55.054 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mlst_g
+Apr-23 10:11:55.055 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_b493920004cf723f: /Users/asmakhimani/nextflow2/nextflow2.sh
+Apr-23 10:11:55.055 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-23 10:11:55.055 [main] DEBUG nextflow.Session - Session await
+Apr-23 10:11:55.306 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /Users/asmakhimani/nextflow2/SRR3215024_1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/asmakhimani/nextflow2/SRR3215024_1.fastq.gz
+Apr-23 10:11:55.307 [Actor Thread 5] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /Users/asmakhimani/nextflow2/SRR3215024_2.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/asmakhimani/nextflow2/SRR3215024_2.fastq.gz
+Apr-23 10:11:55.477 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 10:11:55.481 [Task submitter] INFO  nextflow.Session - [a0/98629b] Submitted process > skesa_ga (1)
+Apr-23 10:11:55.714 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: skesa_ga (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/asmakhimani/nextflow2/work/a0/98629bfaf2688b35e0f4bd0d3aa607]
+Apr-23 10:11:55.725 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=skesa_ga (1); work-dir=/Users/asmakhimani/nextflow2/work/a0/98629bfaf2688b35e0f4bd0d3aa607
+  error [nextflow.exception.ProcessFailedException]: Process `skesa_ga (1)` terminated with an error exit status (1)
+Apr-23 10:11:55.757 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'skesa_ga (1)'
+
+Caused by:
+  Process `skesa_ga (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  skesa --fastq SRR3215024_1.fastq.gz,SRR3215024_2.fastq.gz --cores 8 --memory 64 > assembly.fasta
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  skesa --fastq SRR3215024_1.fastq.gz,SRR3215024_2.fastq.gz --cores 8 --memory 64 
+  
+  WARNING: number of cores was reduced to the hardware limit of 4 cores
+  
+  Error (./readsgetter.hpp:297): Errno 2 opening file SRR3215024_1.fastq.gz
+
+Work dir:
+  /Users/asmakhimani/nextflow2/work/a0/98629bfaf2688b35e0f4bd0d3aa607
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Apr-23 10:11:55.775 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-23 10:11:55.778 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `skesa_ga (1)` terminated with an error exit status (1)
+Apr-23 10:11:55.845 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-23 10:11:55.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-23 10:11:55.863 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=177ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Apr-23 10:11:56.012 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-23 10:11:56.053 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
