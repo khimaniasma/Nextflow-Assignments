@@ -1,0 +1,16 @@
+[11:48:57] This is mlst 2.23.0 running on darwin with Perl 5.026002
+[11:48:57] Checking mlst dependencies:
+[11:48:57] Found 'blastn' => /Users/asmakhimani/mambaforge/envs/nf2/bin/blastn
+[11:48:57] Found 'any2fasta' => /Users/asmakhimani/mambaforge/envs/nf2/bin/any2fasta
+[11:48:57] Found blastn: 2.15.0+ (002015)
+[11:48:57] Excluding 3 schemes: abaumannii vcholerae_2 ecoli
+[11:49:01] Found exact allele match saureus.arcC-7
+[11:49:01] Found exact allele match saureus.glpF-1
+[11:49:01] Found exact allele match saureus.aroE-6
+[11:49:01] Found exact allele match saureus.gmk-5
+[11:49:01] Found exact allele match saureus.tpi-8
+[11:49:01] Found exact allele match efaecium.gyd-87
+[11:49:01] Found exact allele match saureus.pta-8
+[11:49:01] Found exact allele match saureus.yqiL-6
+[11:49:01] mlst also supports --json output for the modern bioinformatician.
+[11:49:01] Done.
